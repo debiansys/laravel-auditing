@@ -16,13 +16,13 @@ namespace Sormagec\Auditing;
 
 use Illuminate\Support\Manager;
 use InvalidArgumentException;
+use RuntimeException;
 use Sormagec\Auditing\Contracts\Auditable as AuditableContract;
 use Sormagec\Auditing\Contracts\AuditDriver;
 use Sormagec\Auditing\Contracts\Auditor as AuditorContract;
 use Sormagec\Auditing\Drivers\Database;
 use Sormagec\Auditing\Events\Audited;
 use Sormagec\Auditing\Events\Auditing;
-use RuntimeException;
 
 class Auditor extends Manager implements AuditorContract
 {

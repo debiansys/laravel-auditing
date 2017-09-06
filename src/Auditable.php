@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
-use Sormagec\Auditing\Contracts\UserResolver;
 use RuntimeException;
+use Sormagec\Auditing\Contracts\UserResolver;
 use UnexpectedValueException;
 
 trait Auditable
