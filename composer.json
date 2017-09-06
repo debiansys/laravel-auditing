@@ -1,0 +1,67 @@
+{
+    "name": "sormagec/laravel-auditing-mongodb",
+    "description": "Audit changes of your Eloquent models in Laravel/Lumen",
+    "keywords": [
+        "accountability",
+        "audit",
+        "auditing",
+        "changes",
+        "eloquent",
+        "history",
+        "log",
+        "logging",
+        "observer",
+        "laravel",
+        "lumen",
+        "record",
+        "revision",
+        "tracking",
+        "mongodb",
+        "mongo"
+    ],
+    "homepage": "https://github.com/bsormagec/laravel-auditing-mongodb",
+    "type": "package",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/bsormagec/laravel-auditing-mongodb/issues",
+        "source": "https://github.com/bsormagec/laravel-auditing-mongodb"
+    },
+    "authors": [{
+        "name": "Burak Sormageç",
+        "email": "burak@sormagec.com"
+    }],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/console": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+        "illuminate/database": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+        "illuminate/filesystem": "5.2.* || 5.3.* || 5.4.* || 5.5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0",
+        "mockery/mockery": "~0.9.4",
+        "orchestra/testbench": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sormagec\\Auditing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sormagec\\Auditing\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "laravelista/lumen-vendor-publish": "Needed to publish the package configuration in Lumen"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev"
+        },
+        "laravel": {
+            "providers": [
+                "Sormagec\\Auditing\\AuditingServiceProvider"
+            ]
+        }
+    }
+}
